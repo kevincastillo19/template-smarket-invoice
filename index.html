@@ -9,19 +9,23 @@
 		*{
 			font-family: 'Roboto', sans-serif;
 		}
+		body{
+			background: #F2F2F2;
+		}
 		.containerInvoice{
 			width: 90%;
 			max-width: 90%;
-			border-radius: 10px;
-			margin: auto;	
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);	
+			border-radius: 8px;
+			margin: auto;			
 		}
 		.colorSmarket-orange{
 			color:#e25f14;
 		}
 		.headerInvoice{
 			text-align: center;
-			border-radius: 10px;
+			border-radius: 8px;
+			border:0.2px solid rgba(0,0,0,0.1);
+			background: #fff;
 		}
 		.weightNormal{
 			font-weight: 400;
@@ -32,17 +36,20 @@
 		}
 		.topInfo{
 			padding: 1rem; 
-			border-radius: 10px;
-			
+			border-radius: 8px;
+			background: #fff;
 		}
-		.bodyInvocie{		
+		.bodyInvocie{	
+			background: #fff;	
+			border-bottom:0.2px solid rgba(0,0,0,0.1);
+			border-radius: 8px;
 			padding: 1rem;
 		}
 		.tableProducts{
 		}
 		.imgProductInvoice{
-			width: 20%;
-			height: 20%;
+			width: 25%;
+			height: 25%;
 			padding: 1rem;
 			border:1.5px solid black;
 		}
@@ -72,9 +79,9 @@
 		.imgProduct{
 			border:1.5px solid black;
 			align-items: center;
-			width: 8rem;
-			height: 5rem;
-			padding: 0.5rem;
+			width: 8.375rem;
+			height: 4.375rem;
+			padding: 1rem;
 			overflow: hidden;	
 		}
 		.imgProduct img{		
@@ -102,6 +109,7 @@
 			text-align: center;
 			font-weight: 300;
 			text-transform: capitalize;
+			text-decoration: none;
 		}
 		.imgFooter{
 			display: flex;
@@ -111,7 +119,7 @@
 			display: flex;
 			justify-content: space-around;
 		}
-		footer{padding: 1rem;}
+		footer{padding: 1rem 1rem 7rem 1rem;background: #fff;}
 		@media(min-width: 1000px) {
 			.containerInvoice{
 				width: 50vw;
@@ -138,7 +146,7 @@
 	<div class="containerInvoice">
 		<div class="headerInvoice">
 			<h1 class="colorSmarket-orange titleInvoice">Almacén el mastercito</h1>		
-			<h3 style="line-height: 0.5rem;">27/08/2020 19:19</h3>
+			<h3 style="line-height: 0.5rem;font-weight: 300;">27/08/2020 19:19</h3>
 			<h2 class="weightNormal">Acaba de realizar el pago</h2>
 			<h1 class="weightNormal">$12.000</h1>			
 		</div>
@@ -162,13 +170,13 @@
 
 			  </tr>			  
 			  <tr class="border-row">
-			    <td class="name">
+			    <td class="name" style="width: 35%;">
 			    	<div class="firstColumn">
 			    		<div class="imgProduct">
 			    			<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Salami_aka.jpg">			    			
 			    		</div>
 			    		<div class="productInfo">
-			    			<p style="width: 90%;">Salame italiano La crianza 141 g</p>
+			    			<p style="width: 100%;">Salame italiano La crianza 141 g</p>
 			    			<p style="font-weight: 100;font-size: 0.9rem;color:rgba(0,0,0,0.7);">La crianza</p>
 			    		</div>
 			    	</div>
@@ -178,13 +186,13 @@
 			    <td class="details-items">$11.321</td>
 			  </tr>
 			  <tr class="border-row">
-			    <td class="name">
+			    <td class="name" style="width: 35%;">
 			    	<div class="firstColumn">
 			    		<div class="imgProduct">
 			    			<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Salami_aka.jpg" alt="imagen producto">			    			
 			    		</div>
 			    		<div class="productInfo">
-			    			<p style="width: 90%;">Salame italiano La crianza 141 g</p>
+			    			<p style="width: 100%;">Salame italiano La crianza 141 g</p>
 			    			<p style="font-weight: 100;font-size: 0.9rem;color:rgba(0,0,0,0.7);">La crianza</p>
 			    		</div>
 			    	</div>
@@ -194,13 +202,13 @@
 			    <td class="details-items">$11.321</td>
 			  </tr>		
 			  <tr class="border-row">
-			    <td class="name">
+			    <td class="name" style="width: 35%;">
 			    	<div class="firstColumn">
 			    		<div class="imgProduct">
 			    			<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Salami_aka.jpg" alt="imagen producto">			    			
 			    		</div>
 			    		<div class="productInfo">
-			    			<p style="width: 90%;">Salame italiano La crianza 141 g</p>
+			    			<p style="width: 100%;">Salame italiano La crianza 141 g</p>
 			    			<p style="font-weight: 100;font-size: 0.9rem;color:rgba(0,0,0,0.7);">La crianza</p>
 			    		</div>
 			    	</div>
@@ -231,12 +239,12 @@
 			<div class="footerInvoice">
 			<div class="imgFooter">				
 				<img src="./smarket-horizontal.png" alt="smarket.cl" style="width: 40%;padding: 1rem;">
-				<img src="asi-de-simple-smarket.png" alt="así de simple"style="width:40%;padding: 1rem;">
+				<img src="./asi-de-simple-smarket.png" alt="así de simple"style="width:40%;padding: 1rem;">
 				</div>
 				<p style="margin-left: 1rem;text-align: justify;width: 90%;">
 					Gracias por preferir el canal tradicional, de esta manera Smarket
 contribuyes a potenciar y digitalizar nuestros almacenes de barrio.
-Conoce más de nosotros en <a href="http://smarketchile.cl/" target="_blank" class="colorSmarket-orange">www.smarketchile.cl</a>
+Conoce más de nosotros en <a href="http://smarketchile.cl/" target="_blank" class="colorSmarket-orange" style="font-weight: 700;">www.smarketchile.cl</a>
 				</p>
 				<div class="imgSocialMedia">
 					<a href="https://www.facebook.com/Smarket_chile-110580657236154" target="_blank"><img src="./icon-facebook.png" alt="Perfil de Facebook"></a>
