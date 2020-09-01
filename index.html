@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Compra Factura</title>	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		*{
+			font-family: 'Roboto', sans-serif;
+		}
+		.containerInvoice{
+			width: 90%;
+			max-width: 90%;
+			border-radius: 10px;
+			margin: auto;	
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);	
+		}
+		.colorSmarket-orange{
+			color:#e25f14;
+		}
+		.headerInvoice{
+			text-align: center;
+			border-radius: 10px;
+		}
+		.weightNormal{
+			font-weight: 400;
+		}
+		.titleInvoice{
+			text-transform: uppercase;
+			padding-top: 1.5rem;
+		}
+		.topInfo{
+			padding: 1rem; 
+			border-radius: 10px;
+			
+		}
+		.bodyInvocie{		
+			padding: 1rem;
+		}
+		.tableProducts{
+		}
+		.imgProductInvoice{
+			width: 20%;
+			height: 20%;
+			padding: 1rem;
+			border:1.5px solid black;
+		}
+		li{
+			list-style: none;
+		}
+		.nameProduct{display: flex;}
+		.details-items{
+			text-align: center;
+		}
+		.headersTable{
+			font-weight: bold;
+			font-size: 1.1rem;
+		}
+		table{
+			border-collapse: collapse;
+		}	
+		table td{
+			padding: 0.5rem;
+		}
+		table #firstRow{
+			border-bottom: 2px solid black;
+		}
+		.firstColumn{
+			display: flex;
+		}
+		.imgProduct{
+			border:1.5px solid black;
+			align-items: center;
+			width: 8rem;
+			height: 5rem;
+			padding: 0.5rem;
+			overflow: hidden;	
+		}
+		.imgProduct img{		
+			padding: 1rem auto;
+			height: 100%;
+		}
+		.productInfo{
+			margin-left: 0.5rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		table .border-row{
+			border-bottom: 2px dashed rgba(0,0,0,0.3);
+		}
+		.boldTextInvoice{font-weight: 700}
+		.btnSmarket-orange{
+			display: block;
+			width: 75%;
+			border-radius: 10px;
+			margin: 1.5rem auto;
+			padding: 1rem;
+			background: #e25f14;
+			color:#fff;
+			text-align: center;
+			font-weight: 300;
+			text-transform: capitalize;
+		}
+		.imgFooter{
+			display: flex;
+			justify-content: space-between;
+		}
+		.imgSocialMedia{
+			display: flex;
+			justify-content: space-around;
+		}
+		footer{padding: 1rem;}
+		@media(min-width: 1000px) {
+			.containerInvoice{
+				width: 50vw;
+				max-width: 50vw;		
+				border-radius: 10px;
+				margin: auto;	
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.2);			
+			}
+		}
+		@media(max-width: 720px) {
+			.containerInvoice{
+				width: 90%;
+				max-width: 90%;		
+				border-radius: 10px;
+				margin: auto;	
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.2);			
+			}
+		}	
+		
+
+	</style>
+</head>
+<body>
+	<div class="containerInvoice">
+		<div class="headerInvoice">
+			<h1 class="colorSmarket-orange titleInvoice">Almacén el mastercito</h1>		
+			<h3 style="line-height: 0.5rem;">27/08/2020 19:19</h3>
+			<h2 class="weightNormal">Acaba de realizar el pago</h2>
+			<h1 class="weightNormal">$12.000</h1>			
+		</div>
+		<div class="topInfo">
+			<h3 class="colorSmarket-orange">Almacén el mastercito</h3>
+			<h3 class="weightNormal">Escuela Agrícola 1577</h3>
+			<h3 class="weightNormal">Macul</h3>
+			<h3 class="weightNormal">Santiago</h3>
+			<h3 class="weightNormal">Chile</h3>
+		</div>
+		<div class="bodyInvocie">
+
+			<h1>Detalle de Venta</h1>	
+
+			<table>
+			  <tr id="firstRow">
+			    <td class="headersTable">Producto</td>
+			    <td class="headersTable">Precio</td>
+			    <td class="headersTable">Cantidad</td>
+			    <td class="headersTable">Subtotal</td>
+
+			  </tr>			  
+			  <tr class="border-row">
+			    <td class="name">
+			    	<div class="firstColumn">
+			    		<div class="imgProduct">
+			    			<img src="https://cl-uptrade-products-images.s3.us-east-2.amazonaws.com/7801610002520.png">			    			
+			    		</div>
+			    		<div class="productInfo">
+			    			<p style="width: 90%;">Salame italiano La crianza 141 g</p>
+			    			<p style="font-weight: 100;font-size: 0.9rem;color:rgba(0,0,0,0.7);">La crianza</p>
+			    		</div>
+			    	</div>
+			    </td>			   
+			    <td class="details-items">$2.849</td>
+			    <td class="details-items">4</td>
+			    <td class="details-items">$11.321</td>
+			  </tr>
+			  <tr class="border-row">
+			    <td class="name">
+			    	<div class="firstColumn">
+			    		<div class="imgProduct">
+			    			<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Salami_aka.jpg" alt="imagen producto">			    			
+			    		</div>
+			    		<div class="productInfo">
+			    			<p style="width: 90%;">Salame italiano La crianza 141 g</p>
+			    			<p style="font-weight: 100;font-size: 0.9rem;color:rgba(0,0,0,0.7);">La crianza</p>
+			    		</div>
+			    	</div>
+			    </td>			   
+			    <td class="details-items">$2.849</td>
+			    <td class="details-items">4</td>
+			    <td class="details-items">$11.321</td>
+			  </tr>		
+			  <tr class="border-row">
+			    <td class="name">
+			    	<div class="firstColumn">
+			    		<div class="imgProduct">
+			    			<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Salami_aka.jpg" alt="imagen producto">			    			
+			    		</div>
+			    		<div class="productInfo">
+			    			<p style="width: 90%;">Salame italiano La crianza 141 g</p>
+			    			<p style="font-weight: 100;font-size: 0.9rem;color:rgba(0,0,0,0.7);">La crianza</p>
+			    		</div>
+			    	</div>
+			    </td>			   
+			    <td class="details-items">$2.849</td>
+			    <td class="details-items">4</td>
+			    <td class="details-items">$11.321</td>
+			  </tr>		
+			</table>								
+			
+			<table style="margin: 1.5rem 0 1.5rem 1rem;">
+				<tr>
+					<td class="boldTextInvoice" style="margin-bottom: -1rem;"><h2 style="margin:0;">TOTAL:</h2></td>
+					<td class="boldTextInvoice"><h2 style="margin:0;">12.000</h2></td>
+				</tr>
+				<tr>
+					<td><h3 style="font-weight: 300;margin:0;">Medio de pago:</h3></td>
+					<td><h3 style="font-weight: ;margin:0;">Credito</h3></td>
+				</tr>
+				<tr>
+					<td><h3 style="font-weight: 300;margin:0;">N° de documento:</h3></td>
+					<td><h3 style="font-weight: 300;margin:0;">1001002</h3></td>
+				</tr>
+			</table>
+			<a href="" class="btnSmarket-orange">Ver boleta</a>			
+		</div>
+		<footer>
+			<div class="footerInvoice">
+			<div class="imgFooter">				
+				<img src="../../Pictures/smarket-horizontal.png" alt="smarket.cl" style="width: 40%;padding: 1rem;">
+				<img src="../../Pictures/asi-de-simple-smarket.png" alt="así de simple"style="width:40%;padding: 1rem;">
+				</div>
+				<p style="margin-left: 1rem;text-align: justify;width: 90%;">
+					Gracias por preferir el canal tradicional, de esta manera Smarket
+contribuyes a potenciar y digitalizar nuestros almacenes de barrio.
+Conoce más de nosotros en <a href="http://smarketchile.cl/" target="_blank" class="colorSmarket-orange">www.smarketchile.cl</a>
+				</p>
+				<div class="imgSocialMedia">
+					<a href="https://www.facebook.com/Smarket_chile-110580657236154" target="_blank"><img src="../../Pictures/1x/icon-facebook.png" alt="Perfil de Facebook"></a>
+					<a href="https://www.instagram.com/smarket_chile/?igshid=x1odjvzob1gh" target="_blank"><img src="../../Pictures/1x/icon-instagram.png" alt="Perfil de Instagram"></a>
+					<a href="https://www.linkedin.com/company/smarket-chile" target="_blank"><img src="../../Pictures/1x/icon-linkedin.png" alt="Perfil de Linkedin"></a>
+				</div>
+			</div>
+		
+
+	</div>
+		</footer>
+
+	
+</body>
+</html>
